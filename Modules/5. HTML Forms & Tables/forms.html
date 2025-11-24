@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- The form element wraps all input fields -->
+    <!-- The action attribute defines WHERE the form data is sent -->
+    <form action="/search">
+      <p>
+        <!-- A <label> helps accessibility and ties text to an input -->
+        <!-- The 'for' attribute must match the input's 'id' -->
+        <label for="userId">Username: </label>
+
+        <!-- Input field -->
+        <!-- type defines what kind of input this is -->
+        <!-- placeholder gives a hint to the user -->
+        <!-- id connects the input to the label -->
+        <!-- Name sends the value to the server -->
+        <!-- required  means the username form has to be filled-->
+        <!-- minlength: the value has to be 1 letter minimum-->
+        <!-- maxlength: the value can be 20 letters maximum-->
+        <input
+          type="text"
+          placeholder="Enter Username"
+          id="userId"
+          name="username"
+          required
+          minlength="1"
+          maxlength="20"
+        />
+
+        <!-- The default for a button in a form is to submit -->
+        <button>Submit!</button>
+      </p>
+
+      <p>
+        <label for="passwordId">Password:</label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          id="passwordId"
+          name="password"
+        />
+
+        <!-- This button doesn't submit because is has a type attribute -->
+        <button type="button">Regular Button</button>
+      </p>
+
+      <p>
+        <label for="numberId">Number:</label>
+
+        <!-- type="number" creates an input that only accepts numeric values -->
+        <!-- placeholder shows a hint before the user types -->
+        <!-- id allows the label to target this specific input -->
+        <!-- name is used to send the input value to the server on submit -->
+        <!-- min sets the smallest allowed number -->
+        <!-- max sets the largest allowed number -->
+        <!-- step controls the increments (e.g., step="1" → 1, 2, 3...) -->
+        <input
+          type="number"
+          placeholder="Enter Number"
+          id="numberId"
+          name="number"
+          min="1"
+          max="100"
+          step="1"
+        />
+      </p>
+    </form>
+
+    <!-- Checkbox -->
+    <form action="#">
+      <label for="checkboxId">Checkbox:</label>
+
+      <!-- Checkbox input lets the user toggle something on or off -->
+      <!-- type="checkbox" creates a small square box -->
+      <!-- name is required so the checkbox value is sent to the server -->
+      <!-- When checked, the form sends: checkbox=on -->
+      <input type="checkbox" id="checkboxId" name="checkbox" />
+      <button>Submit</button>
+    </form>
+
+    <br />
+
+    <!-- Radio Buttons -->
+    <form action="#">
+      <label for="sId">S</label>
+
+      <!-- Radio input lets the user choose ONE option out of a group -->
+      <!-- All radios with the same 'name' belong to the same group -->
+      <!-- value is what gets sent to the server when this radio is selected -->
+      <!-- id connects this radio button to the label -->
+      <input type="radio" name="size" id="sId" value="s" />
+
+      <label for="mId">M</label>
+      <input type="radio" name="size" id="mId" value="m" />
+
+      <label for="lId">L</label>
+      <input type="radio" name="size" id="lId" value="l" />
+
+      <button>Submit</button>
+    </form>
+
+    <br />
+
+    <!-- Select -->
+    <form action="#">
+      <label for="mealId"> Select Meal: </label>
+
+      <!-- <select> creates a dropdown menu -->
+      <!-- name is used to send the selected value to the server -->
+      <!-- id connects the dropdown to the label -->
+      <select name="meal" id="mealId">
+        <!-- Each <option> is one choice in the dropdown -->
+        <!-- value is what gets sent to the server if chosen -->
+        <!-- selected pre selects an option for the first time -->
+        <option value="" selected>--- Choose a meal ---</option>
+
+        <option value="Pho">Pho</option>
+        <option value="Banh Mi">Banh Mi</option>
+        <option value="Bun Cha">Bun Cha</option>
+      </select>
+
+      <button>Submit</button>
+    </form>
+
+    <br />
+
+    <!-- Textarea -->
+    <form action="#">
+      <label for="feedbackId">Feedback:</label>
+
+     <!-- <textarea> allows users to type multiple lines of text -->
+     <!-- id connects the textarea to the label -->
+     <!-- name is used to send the text to the server on submit -->
+     <!-- placeholder gives the user a hint before typing -->
+     <!-- rows sets the visible height in lines -->
+     <!-- cols sets the visible width in characters -->
+      <textarea
+        id="feedbackId"
+        name="feedback"
+        placeholder="Send us your feedback"
+        rows="5"
+        cols="33"
+      ></textarea>
+    </form>
+
+    <h2>Reddit Search Form</h2>
+    <form action="https://www.reddit.com/search">
+      <input type="text" placeholder="Enter your Search Word" name="q" />
+      <button>Search Reddit</button>
+    </form>
+
+    <h2>Google Search Form</h2>
+    <form action="http://www.google.de/search">
+      <input type="text" placeholder="Enter your Search Word" name="q" />
+      <button>Search Google</button>
+    </form>
+
+  </body>
+</html>

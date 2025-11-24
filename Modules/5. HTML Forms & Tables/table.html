@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Structure</title>
+  </head>
+  <body>
+    <!-- A table element wraps the entire table structure -->
+    <table>
+
+    <!-- THEAD holds the header section of the table -->
+      <thead>
+
+        <!-- Table row -->
+        <tr>
+
+        <!-- Table header cells define labels for columns -->
+        <!-- rowspan="2" makes this header span down across 2 rows -->
+          <th rowspan="2">Pop Song</th>
+
+           <!-- colspan="2" makes this header stretch across 2 columns -->
+          <th colspan="2">Artist</th>
+
+          <th rowspan="2">Length</th>
+        </tr>
+
+      </thead>
+
+    <!-- TBODY is where the main data of the table lives -->
+      <tbody>
+        <tr>
+
+        <!-- <td> (table data) holds actual values -->
+          <td>Uptown Funk</td>
+          <td>Mark Ronson & Bruno Mars</td>
+          <td>4:30</td>
+        </tr>
+
+        <tr>
+          <td>Blinding Lights</td>
+          <td>The Weeknd</td>
+          <td>3:20</td>
+        </tr>
+
+        <tr>
+          <td>Birds of a Feather</td>
+          <td>Billie Eilish</td>
+          <td>3:50</td>
+        </tr>
+      </tbody>
+
+      <!-- TFOOT is for footnotes, totals, or summary info -->
+      <tfoot>
+        <tr>
+          <td colspan="3">Number of Songs: 3</td>
+        </tr>
+      </tfoot>
+
+    </table>
+
+    <table>
+
+      <thead>
+        <tr>
+          <th rowspan="2">Hip-Hop Song</th>
+          <th colspan="2">Artist</th>
+          <th rowspan="2">Length</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>N.Y. State of Mind</td>
+          <td>Nas</td>
+          <td>4:42</td>
+        </tr>
+
+        <tr>
+          <td>Humble</td>
+          <td>Kendrick Lamar</td>
+          <td>2:57</td>
+        </tr>
+
+        <tr>
+          <td>Lose Yourself</td>
+          <td>Eminem</td>
+          <td>5:20</td>
+        </tr>
+        <tr>
+          <td>Gold Digger</td>
+          <td>Kanye West & Jamie Foxx</td>
+          <td>3:28</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="4">Number of Songs: 4</td>
+        </tr>
+      </tfoot>
+
+    </table>
+  </body>
+</html>
