@@ -1,0 +1,33 @@
+h1 {
+  /* text-align → alignment */
+  text-align: center;
+
+  /* font-weight → boldness */
+  font-weight: bold;
+
+  /* font-size → text size */
+  font-size: 48px;
+
+  /* font-family → font style */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  /* text-decoration → underline/overline/line-through (with optional thickness + color) */
+  text-decoration: 5px hotpink underline;
+}
+
+h2 {
+  text-decoration: 4px hotpink underline;
+}
+
+h3 {
+  text-decoration: 3px hotpink underline;
+}
+
+p {
+  /* line-height → spacing between lines */
+  line-height: 1.5;
+
+  /* letter-spacing → spacing between characters */
+  letter-spacing: normal;
+}

@@ -1,0 +1,13 @@
+/* selector: h1*/
+h1 {
+  /* property: value; */
+  color: blue; /* named colours */
+}
+
+h2 {
+  color: #5f81fc; /* hex colours */
+}
+
+p {
+  color: rgb(92, 90, 247); /* rgb colours */
+}
