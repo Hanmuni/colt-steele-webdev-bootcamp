@@ -1,0 +1,34 @@
+/* Pseudo-element Selector: lets you style a *specific part* of an element */
+
+/* ::first-letter (styles only the first character) */
+.intro::first-letter {
+  font-size: 32px;
+  color: hotpink;
+  font-weight: bold;
+}
+
+/* ::first-line (styles only the first line of text) */
+.intro::first-line {
+  color: steelblue;
+  text-decoration: underline;
+}
+
+/* ::before (inserts content BEFORE the element) */
+.box::before {
+  content: "::BEFORE ";
+  color: green;
+  font-weight: bold;
+}
+
+/* ::after (inserts content AFTER the element) */
+.box::after {
+  content: "::AFTER";
+  color: red;
+  font-weight: bold;
+}
+
+/* ::placeholder (styles placeholder text inside inputs) */
+.input-demo::placeholder {
+  color: rgb(47, 42, 215);
+  text-align: center !important; /* !important → forces this style to override all other rules */
+}
