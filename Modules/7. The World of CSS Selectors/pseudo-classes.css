@@ -1,0 +1,53 @@
+/* Pseudo-class Selector: describes a state of an element.*/
+
+/* :hover (when mouse is over) */
+a:hover {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* :active (when clicking/holding mouse) */
+button:active {
+  background-color: yellow;
+  transform: scale(0.95);
+}
+
+/* :focus (when an input is selected) */
+input:focus {
+  border: 3px solid dodgerblue;
+  outline: none;
+}
+
+/* :visited (already clicked link) */
+a:visited {
+  color: purple;
+}
+
+/* :checked (when checkbox or radio is checked) */
+input:checked + label {
+  color: green;
+  font-weight: bold;
+}
+
+/* :first-child (first list item) */
+li:first-child {
+  color: rgb(50, 234, 176);
+}
+
+/* :last-child (last list item) */
+li:last-child {
+  color: rgba(159, 12, 146, 0.839);
+}
+
+/* :nth-of-type(3) (selects the third <li> item) */
+li:nth-of-type(3) {
+  font-style: italic;
+  text-decoration: underline wavy;
+}
+
+/* :nth-of-type(2n) (selects every second <li> item) */
+li:nth-of-type(2n) {
+  font-style: oblique;
+  text-decoration: line-through;
+}
