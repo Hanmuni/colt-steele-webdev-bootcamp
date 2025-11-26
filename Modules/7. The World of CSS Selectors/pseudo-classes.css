@@ -7,27 +7,9 @@ a:hover {
   text-decoration: none;
 }
 
-/* :active (when clicking/holding mouse) */
-button:active {
-  background-color: yellow;
-  transform: scale(0.95);
-}
-
-/* :focus (when an input is selected) */
-input:focus {
-  border: 3px solid dodgerblue;
-  outline: none;
-}
-
 /* :visited (already clicked link) */
 a:visited {
-  color: purple;
-}
-
-/* :checked (when checkbox or radio is checked) */
-input:checked + label {
-  color: green;
-  font-weight: bold;
+  color: rgb(184, 31, 110);
 }
 
 /* :first-child (first list item) */
@@ -37,7 +19,13 @@ li:first-child {
 
 /* :last-child (last list item) */
 li:last-child {
-  color: rgba(159, 12, 146, 0.839);
+  color: rgb(205, 10, 10);
+}
+
+/* :nth-of-type(2n) (selects every second <li> item) */
+li:nth-of-type(2n) {
+  font-style: oblique;
+  text-decoration: line-through;
 }
 
 /* :nth-of-type(3) (selects the third <li> item) */
@@ -46,8 +34,23 @@ li:nth-of-type(3) {
   text-decoration: underline wavy;
 }
 
-/* :nth-of-type(2n) (selects every second <li> item) */
-li:nth-of-type(2n) {
-  font-style: oblique;
-  text-decoration: line-through;
+/* :focus (when an input is selected) */
+input:focus {
+  border: 3px solid dodgerblue;
+  outline: none;
 }
+
+/* :active (when clicking/holding mouse) */
+button:active {
+  background-color: yellow;
+  transform: scale(0.95);
+}
+
+/* :checked (when checkbox or radio is checked) */
+input:checked + label {
+  color: green;
+  font-weight: bold;
+}
+
+
+
