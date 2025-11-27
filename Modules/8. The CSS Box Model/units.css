@@ -1,0 +1,52 @@
+html {
+  font-size: 20px; /* 1rem = 20px */
+}
+
+section {
+  background-color: rgb(224, 63, 63);
+  width: 800px;
+  height: 800px;
+}
+
+div {
+  background-color: blue;
+
+  /* % Unit */
+  width: 50%; /* 50% of section width (400px)*/
+  height: 75%; /* 75% of section width (600px)*/
+}
+
+/* em Unit for font-size*/
+article {
+  font-size: 30px; /* base size for em calculation */
+  background-color: hotpink;
+}
+
+h2 {
+  font-size: 2em; /* 2em/60px = parent-element <article> (30px) × 2 */
+}
+
+p {
+  font-size: 0.5em; /* 0.5em/15px = parent-element <article> (30px) × 0.5 */
+}
+
+/* em Unit for padding/margin */
+.box-em {
+  font-size: 20px; /* base size for em calculation */
+  padding: 2em; /* 2 × 20px = 40px padding on all sides */
+  margin: 1.5em; /* 1.5 × 20px = 30px margin */
+  background-color: gold;
+  border: 3px solid black;
+  text-align: center;
+}
+
+/* rem Unit for html> font-size - Default browser <html> font-size = 16px */
+.box-rem {
+  font-size: 1.5rem;   /* 1.5 × 20px = 30px font-size */
+  padding: 2rem;       /* 2 × 20px = 40px padding */
+  margin: 1rem;        /* 1 × 20px = 20px margin */
+  border-radius: 0.5rem; /* 0.5 × 20px = 10px border radius */
+  background-color: lightgreen;
+  border: 3px solid seagreen;
+  text-align: center;
+}

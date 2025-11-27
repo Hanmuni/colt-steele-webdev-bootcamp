@@ -1,0 +1,37 @@
+div {
+  width: 250px; /* sets the width of the element*/
+  height: 250px; /* sets the height of the element*/
+  padding: 8px; /* adds space inside the content */
+  margin: 16px; /* adds space outside the content */
+}
+
+#one {
+  background-color: rgb(223, 52, 137);
+
+  /* border: adds a line around the element (width, style, color) */
+  border: 4px solid rgb(65, 58, 203);
+
+  /* box-sizing: border-box → makes width & height include padding and border */
+  /* This prevents the box from getting bigger when borders/padding are added */
+  box-sizing: border-box;
+
+  /* border-radius: rounds the corners of the element */
+  /* border-radius: 50%; is a circle */
+  border-radius: 10px;
+  padding: 5px 18px 0 32px; /* Top | Right | Bottom | Left (clock direction) */
+}
+
+#two {
+  background-color: rgb(41, 196, 196);
+  border: 6px dotted rgb(103, 230, 92);
+  box-sizing: border-box;
+  padding: 16px 32px; /* Vertical | Horizontal (L direction) */
+}
+
+#three {
+  background-color: rgb(193, 109, 193);
+  border: 4px dashed rgb(251, 180, 87);
+  box-sizing: border-box;
+  padding-top: 13px;
+  padding-right: 36px;
+}
