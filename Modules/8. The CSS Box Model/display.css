@@ -1,0 +1,28 @@
+/* display:inline (same line, no width/height) */
+/* display:block (new line, full width) */
+/* display: inline-block (same line + keeps width/height) */
+
+h1 {
+  background-color: hotpink;
+  border: 8px solid salmon;
+  display: inline; /* make <h1> text stay on same line */
+}
+
+span {
+  background-color: cornflowerblue;
+  border: 3px solid black;
+  display: block; /* force <span> onto new line, full width */
+}
+
+body div {
+  height: 250px;
+  width: 250px;
+  background-color: rgb(63, 14, 169);
+  border: 5px solid orangered;
+  display: inline-block; /* <div> sits beside others + keeps size */
+}
+
+img {
+  width: 500px;
+  height: 250px;
+}
