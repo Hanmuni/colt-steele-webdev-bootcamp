@@ -1,0 +1,34 @@
+section div {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(56, 56, 187);
+  border: 2px solid black;
+  display: inline-block;
+}
+
+#middle1 {
+  position: static; /* static: Default position, ignores top/left*/
+  background-color: greenyellow;
+}
+
+#middle2 {
+  position: relative; /* relative: Moves relative to ITSELF to where it would normally be */
+  top: 150px; /* move DOWN 150px */
+  left: 80px; /* move RIGHT 80px */
+  background-color: coral;
+}
+
+#middle3 {
+  /* absolute: positioned relative to nearest ancestor with position set. 
+  Relative to <body> since <section> doesn't have a postion property */
+  position: absolute;
+  top: 0;
+  left: 280px;
+  background-color: yellow;
+}
+#middle4 {
+  position: fixed; /* fixed: stays fixed to the viewport (screen). Always visible when scrolling. */
+  top: 0;
+  right: 0;
+  background-color: lightseagreen;
+}

@@ -1,0 +1,11 @@
+section {
+  width: 80%;
+  height: 800px;
+  background-image: url("penguin.gif"); /* sets the background picture */
+  background-size: cover; /* scales image to fully cover the area */
+  margin: 0 auto; /* centers the section horizontally */
+}
+
+h1 {
+  color: white;
+}
