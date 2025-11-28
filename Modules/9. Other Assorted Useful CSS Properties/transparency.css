@@ -1,0 +1,27 @@
+section {
+  width: 500px;
+  height: 500px;
+  background-color: hotpink;
+}
+
+#rgba {
+  width: 50%;
+  height: 50%;
+  background-color: rgba( 51, 6, 231, 0.5 ); /* Transparency for background ONLY */
+  /* 
+   rgba( 51, 6, 231, 1 ) = solid,
+   rgba( 51, 6, 231, 0.5 ) = 50% transparent,
+   rgba( 51, 6, 231, 0 ) = invisible 
+*/
+}
+
+#opacity {
+  width: 50%;
+  height: 50%;
+  background-color: greenyellow;
+
+  opacity: 0.3; /* Transparency for ENTIRE element (text, borders, children, everything is faded) */
+  /* opacity: 1;  fully visible */
+  /* opacity: 0.5; 50% visible */
+  /* opacity: 0;  invisible */
+}

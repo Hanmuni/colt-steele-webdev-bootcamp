@@ -1,0 +1,81 @@
+h1 {
+  background-color: #2a9d8f;
+  border: 5px solid #264653;
+  color: #eae2b7;
+  padding: 0.7em;
+  width: 300px;
+  font-size: 1.8em;
+  text-align: center;
+  margin: 20px auto;
+  font-family: Courier New;
+  font-weight: lighter;
+}
+
+h1:nth-of-type(2n) {
+  background-color: #e9c46a;
+}
+h1:nth-of-type(3n) {
+  background-color: #f4a261;
+}
+h1:nth-of-type(4n) {
+  background-color: #e76f51;
+}
+
+#one h1:first-child {
+  transform: rotate(45deg); /* rotate: spins element 45°   */
+}
+
+#one h1:nth-of-type(2) {
+  transform: scale(0.5); /* scale: shrinks or enlarges element. 0.5 = 50% smaller */
+}
+
+/* translate: moves element without affecting layout */
+#one h1:nth-of-type(3) {
+  transform: translateX(180px); /* translateX: moves element right/left. 180px to the right */
+}
+#one h1:nth-of-type(4) {
+  transform: translateY(50px); /* translateY: moves element up/down. 50px down */
+}
+
+#two h1:nth-of-type(1) {
+  transform: skew(30deg);
+
+  /* 
+   SKEW VISUAL EXAMPLES
+   ---------------------
+
+   Normal (no skew)
+   +---------+
+   |  BOX    |
+   +---------+
+
+   skewX(30deg)  → slants left/right
+        +---------+
+       /  BOX     /
+      +---------+
+
+   skewY(20deg)  → slants up/down
+   +---------+
+    \  BOX   \
+     +---------+
+
+   skew(20deg, 20deg) → slants diagonally
+        +--------- 
+       /  BOX    \ 
+      +---------  
+*/
+}
+
+#two h1:nth-of-type(2) {
+  transform: skew(10deg, 28deg);
+}
+
+/* multiple transforms rotate THEN scale */
+#two h1:nth-of-type(3) {
+  transform: rotate(90deg) scale(1.3); /* spin + enlarge */
+}
+
+/* combined transforms move, spin, scale */
+#two h1:nth-of-type(4) {
+  transform: translateX(-280px) rotate(45deg) scaleY(1.5); /* move left 280px, spin 45°, stretch vertically */
+}

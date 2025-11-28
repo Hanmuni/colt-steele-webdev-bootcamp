@@ -1,0 +1,25 @@
+/* 
+   A transition smoothly animates a property from one state to another.
+   It uses 4 parts:
+   1) property: what will animate
+   2) duration: how long the animation takes
+   3) timing-function: acceleration pattern
+   4) delay: wait time before starting
+*/
+
+.circle {
+  width: 300px;
+  height: 300px;
+  background-color: hotpink;
+  border-radius: 50%;
+
+  /* transition: Property Name | duration | timing function | delay */
+  transition: background-color 1s ease-in-out 0.3s,
+    border-radius 1s ease-in-out 0.3s;
+}
+
+.circle:hover {
+  background-color: orangered;
+  border-radius: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+body {
+  font-family: "Playwrite US Trad Guides", cursive; /* add google font in css file */
+}
+
+main {
+  margin: 0 auto;
+  width: 75%;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
