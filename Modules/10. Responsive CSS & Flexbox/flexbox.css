@@ -1,0 +1,154 @@
+#flex-container {
+  background-color: rgb(196, 239, 153);
+  width: 90%;
+  height: 800px;
+  margin: 0 auto;
+  border: 5px solid rgb(196, 239, 153);
+  display: flex; /* activate flexbox layout */
+
+  flex-direction: row; /* main axis = Horizontal ⸺ */
+  /* 
+     flex-direction: column;        → top → bottom |
+     flex-direction: row-reverse;   → right → left ⸺
+     flex-direction: column-reverse;→ bottom → top |
+  */
+
+  justify-content: center; /* align items on the MAIN axis ⸺ */
+  /* 
+     justify-content: flex-start; (items at left)
+     justify-content: flex-end; (items at right)
+     justify-content: space-between; (space between items)
+     justify-content: space-around; (equal outer spacing)
+     justify-content: space-evenly; (perfectly even spacing)
+  */
+
+  align-items: center; /* align items on CROSS axis vertical | */
+  /* 
+     align-items: center (vertically center items)
+     align-items: flex-end; (align items to bottom)
+     align-items: stretch; (stretch height (if no fixed height))
+  */
+
+  flex-wrap: wrap; /* allow items to wrap onto multiple lines */
+  /* 
+     flex-wrap: nowrap; (keep all items on one line)
+     flex-wrap: wrap-reverse; (wrap upward)
+  */
+
+  align-content: space-around; /* spacing between ROWS (works only with wrap) */
+  /* 
+       align-content: flex-start; (rows packed at the top)
+       align-content: flex-end; (rows pushed to the bottom)
+       align-content: center; (rows centered vertically)
+       align-content: space-between; (even space between rows)
+       align-content: space-around; (space around each row)
+       align-content: stretch; (rows stretch to fill container)
+  */
+}
+
+#flex-container div {
+  border: 2px solid black;
+}
+
+#one {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(10, 214, 249);
+}
+#two {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(7, 201, 172);
+}
+#three {
+  width: 200px;
+  height: 100px !important;
+  background-color: rgb(45, 78, 228);
+  align-self: flex-start !important; /* align-self: aligns ONE item on cross axis */
+}
+#four {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(108, 174, 255);
+}
+#five {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(90, 9, 143);
+}
+
+#six {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(235, 127, 60);
+}
+
+#grow {
+  background-color: rgb(230, 230, 230);
+  width: 1000px; /* will force grow */
+  height: 300px;
+  margin: 32px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.grow-box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+#grow1 {
+  flex-grow: 1; /* Controls how much an item expands to fill leftover space */
+  /* 
+flex-grow: 1; (grows to take available space)
+Higher numbers (grows more compared to other items)
+*/
+
+  background-color: rgb(121, 200, 255);
+}
+
+#grow2 {
+  flex-grow: 2; /* grows 2x more than grow1 */
+  background-color: rgb(92, 172, 232);
+}
+
+#shrink {
+  background-color: rgb(230, 230, 230);
+  width: 500px; /* will force shrink */
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.shrink-box {
+  width: 300px;
+  height: 150px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+#shrink1 {
+  flex-shrink: 1; /* Controls how quickly an item shrinks when space is too small. Only works with flex-wrap: nowrap */
+  /*
+flex-shrink: 1 (normal shrinking)
+flex-shrink: 3 = (shrinks 3x more than items with shrink:1)
+*/
+
+  background-color: rgb(255, 211, 91);
+}
+
+#shrink3 {
+  flex-shrink: 3; /* shrinks 3x faster than shrink1 */
+  background-color: rgb(255, 169, 74);
+}
