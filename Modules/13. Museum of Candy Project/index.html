@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font Link -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Museum of Candy</title>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-md fixed-top">
+      <a href="#" class="navbar-brand ms-4">CANDY</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navLinks"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link"> HOME </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> ABOUT </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> TICKETS </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container-fluid px-0">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="text-white text-center d-none d-lg-block mt-5">
+            <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <img
+            src="hand2.png"
+            class="img-fluid"
+            alt="Hand in a grooming glove holding a donut"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid px-0">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            class="img-fluid"
+            src="milk.png"
+            alt="3 milk bottles that have a candy on top of them"
+          />
+        </div>
+
+        <div
+          class="milk col-md-6 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h2>MUSEUM OF CANDY</h2>
+          <img
+            src="lolli_icon.png"
+            alt="Icon of a Lollipop"
+            class="d-none d-lg-inline"
+          />
+          <p class="lead m-3 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolorem
+            delectus recusandae alias similique, quis explicabo omnis
+            reprehenderit vitae adipisci ab laborum blanditiis porro enim
+            expedita itaque aspernatur rem provident.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid px-0">
+      <div class="row">
+        <div class="col-md-6 order-md-2">
+          <img class="img-fluid" src="gumball.png" alt="Picture of a gumball" />
+        </div>
+
+        <div
+          class="milk col-md-6 order-md-1 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h2>MUSEUM OF CANDY</h2>
+          <img
+            src="lolli_icon.png"
+            alt="Icon of a Lollipop"
+            class="d-none d-lg-inline"
+          />
+          <p class="lead m-3 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolorem
+            delectus recusandae alias similique, quis explicabo omnis
+            reprehenderit vitae adipisci ab laborum blanditiis porro enim
+            expedita itaque aspernatur rem provident.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap CDN Link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Navbar scrolling function -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const nav = document.getElementById("navbar");
+        if (window.scrollY > nav.offsetHeight) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
