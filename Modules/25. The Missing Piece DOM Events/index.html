@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Events</title>
+  </head>
+  <body>
+    <div>
+      <h1>Onclick #1</h1>
+      <button onclick="console.log('First Button clicked!')">Click me!</button>
+    </div>
+
+    <div>
+      <h1>Onclick #2</h1>
+      <button id="btn2" onclick="">Click me!</button>
+    </div>
+    <div>
+      <h1>Onclick #3</h1>
+      <button id="btn3" onclick="">Click me!</button>
+    </div>
+    <div>
+      <h1>Background Color</h1>
+      <button id="bg-btn" onclick="">Click me!</button>
+    </div>
+
+    <div>
+      <h1>Form Prevent Default</h1>
+      <form id="loginForm">
+        <input type="number" name="number" placeholder="number" required />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div>
+      <h1 id="input-headline">Input Event</h1>
+      <input type="text" />
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
