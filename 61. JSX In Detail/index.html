@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JSX in detail</title>
+  </head>
+  <body>
+    <h1>JSX in Detail – Core Concepts & Key Lessons</h1>
+
+    <div class="section">
+      <h2>1. Importing & Exporting Components</h2>
+      <p>
+        React applications are split into many files. Typically, each component
+        lives in its own file.
+      </p>
+      <ul>
+        <li>One component per file (recommended)</li>
+        <li>File name should match component name</li>
+        <li>Most components use <strong>default exports</strong></li>
+      </ul>
+      <p>
+        Components must be <em>exported</em> before they can be
+        <em>imported</em>. Files do not automatically know about each other.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>2. Core Rules of JSX</h2>
+
+      <h3>Rule 1: Self-closing tags must close</h3>
+      <p>JSX requires explicit closing for self-closing elements.</p>
+      <pre><code>
+&lt;input /&gt;
+&lt;img /&gt;
+&lt;br /&gt;
+  </code></pre>
+
+      <h3>Rule 2: Only one top-level element may be returned</h3>
+      <p>
+        Components can return many elements, but they must be wrapped in a
+        single parent element.
+      </p>
+      <pre><code>
+&lt;div&gt;
+  &lt;h1&gt;Hello&lt;/h1&gt;
+  &lt;p&gt;Welcome&lt;/p&gt;
+&lt;/div&gt;
+  </code></pre>
+
+      <p>
+        Parentheses are often used to format JSX cleanly across multiple lines.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>3. React Fragments</h2>
+      <p>
+        React Fragments allow you to satisfy JSX’s single-root rule without
+        adding unnecessary HTML elements to the DOM.
+      </p>
+      <pre><code>
+&lt;&gt;
+  &lt;input /&gt;
+  &lt;input /&gt;
+  &lt;button&gt;Login&lt;/button&gt;
+&lt;/&gt;
+  </code></pre>
+      <p>
+        Fragments render no extra HTML. Only their children appear in the DOM.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>4. JavaScript Expressions in JSX</h2>
+      <p>
+        Curly braces <code>{}</code> allow JavaScript expressions inside JSX.
+      </p>
+      <ul>
+        <li>Variables</li>
+        <li>Math expressions</li>
+        <li>Function calls</li>
+        <li>Object properties</li>
+      </ul>
+      <pre><code>
+&lt;h2&gt;{petName}&lt;/h2&gt;
+&lt;p&gt;{price * nights}&lt;/p&gt;
+  </code></pre>
+      <p>
+        Only expressions are allowed. Not statements like <code>if</code> or
+        <code>for</code>.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>5. JSX in Real Components (Die Example)</h2>
+      <p>
+        A React component is just a JavaScript function. It can run logic and
+        return JSX using computed values.
+      </p>
+      <ul>
+        <li>Variables are created inside the function</li>
+        <li>Values are injected into JSX with <code>{}</code></li>
+        <li>Each render runs the function again</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>6. Component Decomposition</h2>
+      <p>
+        React encourages breaking UIs into small, reusable components and
+        assembling them into larger ones.
+      </p>
+      <pre><code>
+App
+ └── DiceRoll
+      ├── Die
+      ├── Die
+      └── Die
+  </code></pre>
+      <p>This keeps code reusable, readable, and scalable.</p>
+    </div>
+
+    <div class="section">
+      <h2>7. Styling JSX Components</h2>
+
+      <h3>class → className</h3>
+      <p>
+        Because <code>class</code> is a reserved JavaScript keyword, JSX uses
+        <code>className</code>.
+      </p>
+      <pre><code>
+&lt;h2 className="die"&gt;4&lt;/h2&gt;
+  </code></pre>
+
+      <h3>CSS Files</h3>
+      <ul>
+        <li>CSS is written normally</li>
+        <li>CSS files are imported into components</li>
+        <li>Importing CSS tells Webpack to include it</li>
+      </ul>
+      <pre><code>
+import "./Die.css";
+  </code></pre>
+      <p>CSS is still global. File separation is a convention, not scoping.</p>
+    </div>
+
+    <div class="section">
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>JSX is strict but predictable</li>
+        <li>Components must return one root element</li>
+        <li>Fragments avoid unnecessary DOM nodes</li>
+        <li><code>{}</code> makes JSX dynamic</li>
+        <li>Components should be small and composable</li>
+        <li>Styling uses <code>className</code> and imported CSS</li>
+      </ul>
+    </div>
+  </body>
+</html>
