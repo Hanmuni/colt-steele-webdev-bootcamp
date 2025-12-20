@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Local Apps with Vite</title>
+  </head>
+  <body>
+    <h1>Local React Apps With Vite - Core Concepts & Key Lessons</h1>
+
+    <div class="section">
+      <h2>1. Why Run React Locally?</h2>
+      <p>
+        CodeSandbox is useful for learning React quickly, but running React
+        locally feels more realistic and removes dependency on internet access
+        or online tools.
+      </p>
+      <ul>
+        <li>Local development feels closer to real-world workflows</li>
+        <li>Code is identical to CodeSandbox</li>
+        <li>You control the environment</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>2. What Is Vite?</h2>
+      <p>
+        Vite is a modern tool for quickly creating and running React
+        applications locally. It is pronounced <strong>“veet”</strong>.
+      </p>
+      <ul>
+        <li>Extremely fast setup</li>
+        <li>Includes a development server</li>
+        <li>Handles JSX transpilation</li>
+        <li>Supports React, Vue, Svelte, and more</li>
+      </ul>
+      <p>
+        Vite does all the heavy lifting so you can focus on writing React code.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>3. Creating a React App With Vite</h2>
+      <p>
+        To create a new React app, run the following command in an empty folder:
+      </p>
+      <pre><code>
+npm create vite@latest
+  </code></pre>
+      <p>During setup:</p>
+      <ul>
+        <li>Choose a project name (folder name)</li>
+        <li>Select <strong>React</strong> as the framework</li>
+        <li>Select <strong>JavaScript</strong> (not TypeScript)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Installing Dependencies & Running the App</h2>
+      <p>After creating the project:</p>
+      <pre><code>
+cd project-name
+npm install
+npm run dev
+  </code></pre>
+      <p>
+        This starts a local development server with live reloading. Any file
+        changes automatically refresh the browser.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>5. Create React App (CRA) vs Vite</h2>
+      <p>Create React App was the old standard way to create React apps.</p>
+      <ul>
+        <li>Still works</li>
+        <li>Slower startup</li>
+        <li>Older tooling</li>
+      </ul>
+      <p>Vite is now preferred:</p>
+      <ul>
+        <li>Faster</li>
+        <li>More flexible</li>
+        <li>Recommended in modern React workflows</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>6. Vite Project Structure</h2>
+      <p>Important folders and files:</p>
+      <ul>
+        <li><code>index.html</code> – base HTML file</li>
+        <li><code>src/</code> – where all React code lives</li>
+        <li><code>src/main.jsx</code> – renders the App component</li>
+        <li><code>src/App.jsx</code> – root React component</li>
+        <li><code>src/index.css</code> – global styles</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>7. Rendering the App</h2>
+      <p>
+        React renders the <code>App</code> component into a
+        <code>&lt;div id="root"&gt;</code> inside <code>index.html</code>.
+      </p>
+      <p>
+        The file <code>main.jsx</code> handles this process. You usually do not
+        modify it.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>8. Creating Components in Vite</h2>
+      <p>Components live inside the <code>src</code> folder.</p>
+      <ul>
+        <li>Use <code>.jsx</code> or <code>.js</code> extensions</li>
+        <li>Component names are capitalized</li>
+        <li>Components are exported and imported normally</li>
+      </ul>
+      <p>React code written in Vite is identical to CodeSandbox.</p>
+    </div>
+
+    <div class="section">
+      <h2>9. Styling Components</h2>
+      <p>Styling in Vite follows the same conventions used earlier:</p>
+      <ul>
+        <li>Component-specific CSS files (e.g. <code>Chicken.css</code>)</li>
+        <li>Import CSS into the component file</li>
+        <li>Use <code>className</code> instead of <code>class</code></li>
+      </ul>
+      <p>CSS is included in the final build only if it is imported.</p>
+    </div>
+
+    <div class="section">
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Vite is the modern way to create React apps locally</li>
+        <li>Setup is fast and simple</li>
+        <li>Live reloading works automatically</li>
+        <li>React code is identical to CodeSandbox</li>
+        <li>Vite handles Babel, bundling, and dev server setup</li>
+      </ul>
+    </div>
+  </body>
+</html>
