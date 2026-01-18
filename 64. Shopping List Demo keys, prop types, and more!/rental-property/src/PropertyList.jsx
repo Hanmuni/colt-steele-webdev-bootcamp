@@ -1,8 +1,9 @@
 import Property from "./Property";
+import "./PropertyList.css";
 
 export default function PropertyList({ properties }) {
   return (
-    <div>
+    <div className="property-list">
       {properties.map((property) => {
         return (
           <Property
