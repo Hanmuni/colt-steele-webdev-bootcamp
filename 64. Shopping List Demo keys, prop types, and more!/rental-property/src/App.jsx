@@ -28,7 +28,7 @@ function App() {
 
   return (
     <>
-      <PropertyList properties={properties} />{" "}
+      <PropertyList properties={properties} />
     </>
   );
 }

@@ -11,6 +11,7 @@ export default function PropertyList({ properties }) {
             propertyName={property.propertyName}
             price={property.price}
             rating={property.rating}
+            // {...property}
           />
         );
       })}
