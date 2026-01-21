@@ -1,6 +1,4 @@
-import { useState } from "react";
 import ShoppingList from "./ShoppingList";
-
 import "./App.css";
 
 function App() {
