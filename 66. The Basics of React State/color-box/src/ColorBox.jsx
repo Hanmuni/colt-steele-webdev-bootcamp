@@ -12,12 +12,10 @@ export default function ColorBox({ colors }) {
   };
 
   return (
-    <>
-      <div
-        className="color-box"
-        onClick={changeColor}
-        style={{ backgroundColor: color }}
-      ></div>
-    </>
+    <div
+      className="color-box"
+      onClick={changeColor}
+      style={{ backgroundColor: color }}
+    ></div>
   );
 }
