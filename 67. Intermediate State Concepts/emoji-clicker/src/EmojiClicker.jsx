@@ -35,7 +35,7 @@ export default function EmojiClicker() {
         <span
           onClick={() => deleteEmoji(emoji.id)}
           key={emoji.id}
-          style={{ fontSize: "4rem", padding: "1rem" }}
+          style={{ fontSize: "4rem", padding: "1rem", cursor: "pointer" }}
         >
           {emoji.emoji}
         </span>
