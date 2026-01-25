@@ -23,9 +23,10 @@ export default function EmojiClicker() {
 
   const allLove = () => {
     setEmojis((oldEmojis) =>
-      oldEmojis.map((emoji) => {
-        return { ...emoji, emoji: "💖" };
-      }),
+      oldEmojis.map((emoji) => ({
+        ...emoji,
+        emoji: "💖",
+      })),
     );
   };
 
